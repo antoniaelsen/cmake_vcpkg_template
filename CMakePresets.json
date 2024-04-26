@@ -1,0 +1,24 @@
+{
+	"version": 6,
+	"cmakeMinimumRequired": {
+		"major": 3,
+		"minor": 20,
+		"patch": 1
+	},
+	"configurePresets": [
+		{
+			"name": "default",
+			"displayName": "Configure (Static)",
+			"description": "Configure (Static)",
+			"binaryDir": "${sourceDir}/build",
+			"generator": "Unix Makefiles",
+			"cacheVariables": {
+				"CMAKE_TOOLCHAIN_FILE": {
+					"type": "FILEPATH",
+					"value": "<path to>/microsoft/vcpkg/scripts/buildsystems/vcpkg.cmake"
+				},
+				"CMAKE_INSTALL_PREFIX": "${sourceDir}/dist"
+			}
+		}
+	]
+}
