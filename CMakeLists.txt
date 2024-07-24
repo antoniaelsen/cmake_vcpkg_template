@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.23.5)
 
-project(templae VERSION 0.0.1)
+project(template VERSION 0.0.1)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "-Wall -Wno-deprecated-declarations -Wno-unused-but-set-variable")
@@ -29,5 +29,5 @@ target_include_directories(
 target_link_libraries(
   ${PROJECT_NAME}
   PRIVATE
-  mcap::mcap
+  <package>
 )
