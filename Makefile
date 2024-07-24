@@ -1,4 +1,3 @@
-
 .PHONY: all
 all: clean configure build
 
@@ -16,5 +15,5 @@ configure:
 
 .PHONY: run
 run:
-	./build/bin/profiler
+	./build/bin/<your binary here>
 
